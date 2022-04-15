@@ -55,3 +55,25 @@ myPhone.price = 7999;
 myPhone.color = 'white';
 
 console.log(myPhone)
+
+
+// Declarando un objeto con variables locales y publicas
+const myCase = (() => {
+    // Variables de contexto local
+    const colorCase = "Red with Black"
+    const typeConnect = 'Type C'
+    const charger = "Fast Charge"
+
+    // Variable para guardar las variables locales
+    const exported = {
+        colorPhone: "The cellphone is white",
+        chargerConnection: "The type of the charger is type C",
+            publicCharger: charger,
+            publicColor: colorCase,
+            publicConnect: typeConnect
+    }
+    // Exposición de variables locales
+    return exported
+})()
+
+console.log(myCase)
