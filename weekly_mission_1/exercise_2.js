@@ -5,3 +5,5 @@ example.info('This is a message you only can see if you have the file "examples.
 
 // si no llamamos el example.delete en el otro archivo nos generara error
 example.delete('This is another message')
+
+example.lastExample('Today is Friday 15')

@@ -7,3 +7,7 @@ exports.info = (message) => {
 exports.delete = (message) => {
     console.log(`The other message is: ${message}`)
 }
+
+exports.lastExample = (message) => {
+    console.log(`The last message is: ${message}`)
+}
