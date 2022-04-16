@@ -1,5 +1,5 @@
 // aqui estamos creando una variable donde asignamos que necesitamos otro archivo
-const example = require('./require/example_1')
+const example = require('./example_1')
 
 example.info('This is a message you only can see if you have the file "examples.js"')
 

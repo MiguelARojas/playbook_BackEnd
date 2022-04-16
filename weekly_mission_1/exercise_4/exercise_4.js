@@ -1,5 +1,5 @@
 // invocamos el modulo que contendra nuestra clase
-const Logger = require('./require/example_4')
+const Logger = require('./example_4')
 
 // creamos nuestro objeto el cual llama al constructor de nuestra clase
 const DbLogger = new Logger('DATABASE')
