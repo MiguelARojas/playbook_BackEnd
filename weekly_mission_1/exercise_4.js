@@ -2,7 +2,7 @@
 const Logger = require('./require/example_4')
 
 // creamos nuestro objeto el cual llama al constructor de nuestra clase
-const DbLogger = new Logger('DB')
+const DbLogger = new Logger('DATABASE')
 
 // invocamos al metodo
 DbLogger.info('This is a message')
