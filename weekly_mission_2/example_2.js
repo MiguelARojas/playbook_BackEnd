@@ -166,3 +166,37 @@ const myOtherFamily = new OtherFamily('Rojas',23)
 console.log(myOtherFamily)
 // incluso podemos hacer uso de sus metodos
 console.log(myOtherFamily.getName)
+
+// Ejemplo 10 - Overrinding methods
+class Explorer{
+    constructor(name, username, mission){
+     this.name = name
+     this.username = username
+     this.mission = mission
+    }
+  
+    getNameAndUsername(){
+     return `Explorer ${this. name}, username: ${this.username}`
+    }
+  }
+  
+  class Viajero extends Explorer {
+    constructor(name, username, mission, cycle){
+      super(name, username, mission) // SUPER nos ayudará a llamar el constructor padre
+      this.cycle = cycle // Agregamos este atributo de la clase Viajero, es exclusiva de esta clase y no de la clase padre
+    }
+  
+    getGeneralInfo(){
+      let nameAndUsername = this.getNameAndUsername() // llamamos el método de la clase padre
+      // nameAndUsername  es una variable de esta función, no necesitas usar this para referenciarla.
+      return `${nameAndUsername}, Ciclo ${this.cycle}`
+    }
+  }
+  
+  const viajero1 = new Viajero("Miguel", "Mikael", "BackEnd - NodeJS", "Abril 2022")
+  console.log("\nNuestro primer viajero")
+  console.log(viajero1)
+  console.log("Método de la clase padre")
+  console.log(viajero1.getNameAndUsername())
+  console.log("Método de la clase hijo")
+  console.log(viajero1.getGeneralInfo())
