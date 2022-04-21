@@ -51,3 +51,17 @@ console.log(namesPetsFilter)
 const namesEndsByry = namePets.filter(pets => pets.endsWith('ry'))
 console.log("\nElementos de mi lista que terminen en RY")
 console.log(namesEndsByry)
+
+
+// Ejemplo 8 - Filtrar una lista por condicional
+const ages = [
+    {name:"Miguel", age:22},
+    {name:"Valente", age:22},
+    {name:"Angel", age:45},
+    {name:"Ana", age:33},
+    {name:"Carlos", age: 8}
+]
+
+const agesFilter = ages.filter(agePerson => agePerson.age < 35) // asignamos que nos filtre la informacion que tenga de edad menos de 35
+console.log("\nElementos de mi lista con edad menor a 35")
+console.log(agesFilter)
