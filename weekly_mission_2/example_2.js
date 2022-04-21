@@ -29,3 +29,23 @@ class person {
 const Miguel = new person("Miguel",22,94,1.87)
 console.log("\nNuestro objeto con atributos a partir de una clase")
 console.log(Miguel)
+
+// Ejemplo 4 - Metodos con los objetos
+class Movie {
+    constructor(name,duration,date,actors,language){
+        this.name = name
+        this.duration = duration
+        this.date = date
+        this.actors = actors
+        this.language = language
+    }
+
+    // creamos un metodo dentro de nuestra clase
+    getMovie(){
+        return `Movie: ${this.name}, Duration: ${this.duration}, Actors: ${this.actors}`
+    }
+}
+
+console.log("\nNuestra pelicula es: ")
+const MyMovie = new Movie("Harry Potter",2.30,"21/04/2022",['Daniel Radcliffe', 'Rupert Grint', 'Emma Watson'],['Spanish','English','Portuges'])
+console.log(MyMovie.getMovie())
