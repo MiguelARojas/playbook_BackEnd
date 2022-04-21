@@ -83,3 +83,16 @@ console.log("\nLos elementos de mi lista son string (todos): " + allNames)
 const ages2 = [22,21,35,45,50,8,15,26]
 const age = ages2.find(age => age > 25)
 console.log("\nPrimer edad encontrada mayor a 25 es " + age)
+
+
+// Ejemplo 12 - Uso del find en una lista de objetos
+const ages3 = [
+    {name:"Miguel", age:22},
+    {name:"Valente", age:22},
+    {name:"Angel", age:45},
+    {name:"Ana", age:33},
+    {name:"Carlos", age: 8}
+]
+
+const age_less_than_20 = ages3.find(person => person.age < 20)
+console.log("\nPersona con menos de 20 años es: " + age_less_than_20.name + " with " + age_less_than_20.age + " years")
