@@ -71,3 +71,9 @@ const numbers4 = [1,2,3,4,5]
 const numbersReduce = numbers4.reduce((acc, element) => acc + element, 0)
 console.log("\nElementos de mi lista usando reduce para hacer la suma de mi lista")
 console.log(numbersReduce)
+
+// Ejemplo 10 - Uso de every
+// Every nos ayuda a comprobar los elementos de nuestra lista, si todos cumplen nos retorna un true
+const namesExplorers = ['Valente','Victor','Miguel'] 
+const allNames = namesExplorers.every(name => typeof name == 'string') // comprobamos que los elementos de mi lista sean tipo string
+console.log("\Los elementos de mi lista son string (todos): " + allNames)
