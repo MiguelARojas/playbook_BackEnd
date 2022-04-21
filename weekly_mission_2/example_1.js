@@ -103,3 +103,11 @@ console.log("\nPersona con menos de 20 años es: " + age_less_than_20.name + " w
 const explorers = ['Victor','Valente','Miguel']
 const result = explorers.findIndex(name => name.length > 6) // nos retornara el primer elemento que cuente con mas de 6 caracteres
 console.log("\nPersona que cuenta con mas de 6 caracteres en su nombre es: " + explorers[result] + " que se encuentra en la posicion " + result + " de nuestro arreglo") 
+
+
+// Ejemplo 14 - Uso del some
+// El some trabaja de la misma manera que every solo que con some mientras un elemento de nuetra lista cumpla con la validacion nos retornara true
+const ages4 = [22,21,35,45,50,8,15,26]
+
+const age_45 = ages4.some(age => age == 45)
+console.log("\n¿Un elemento de nuestra lista contiene un 45? -> " + age_45) // true
