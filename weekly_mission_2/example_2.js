@@ -49,3 +49,23 @@ class Movie {
 console.log("\nNuestra pelicula es: ")
 const MyMovie = new Movie("Harry Potter",2.30,"21/04/2022",['Daniel Radcliffe', 'Rupert Grint', 'Emma Watson'],['Spanish','English','Portuges'])
 console.log(MyMovie.getMovie())
+
+// Ejemplo 5 - Atriibutos con valores por default
+class Store {
+    constructor(name,schedule,score){
+        this.name = name
+        this.schedule = schedule
+        this.score = score
+        this.dateCreated = new Date() // nos guardara la fecha en la que se creo el objeto
+    }
+
+    // creamos un metodo dentro de nuestra clase
+    getStore(){
+        return `Store Name: ${this.name}, Schedule: ${this.schedule}, Score: ${this.score}, Date of the score: ${this.dateCreated}`
+    }
+}
+
+console.log("\nThe information about my store")
+const MyStore = new Store("Apple Store","08:00 - 22:00",5) // no es necesario mandar el dateCreated ya que solo se asigna
+console.log(MyStore.getStore())
+
