@@ -11,7 +11,7 @@ console.log(myFirstObject) // nos debe imprimir {}
 const mySecondObject = {
     name: "Miguel",
     lastName: "Rojas",
-    age: "22",
+    age: 22,
     city: "Guadalajara",
     school: "CUCEI",
     pets: "1 Hamster, 2 Dogs"
@@ -34,3 +34,28 @@ console.log("Imprimiendo valores de mi objeto")
 console.log(mySecondObject.name)
 console.log(mySecondObject.lastName)
 console.log(mySecondObject.pets)
+
+
+// Ejemplo 3 - Objeto con diferentes propiedades
+console.log("\n")
+const myThirdObject = {
+    name: "Miguel",
+    age: 22,
+    alias: [ // en el caso del alias se declara con [] donde podemos acceder a su conetenido con las posiciones
+        "Mikael",
+        "Mika",
+        "Mike"
+    ],
+    address: {
+        zip_code: 45130,
+        street: "Valdepeñas",
+        suburb: "Real de Valdepeñas"
+    }
+}
+
+console.log("Ejemplo 3. Creando un objeto con diferentes propiedades")
+console.log(myThirdObject)
+console.log("My name: " + myThirdObject.name)
+console.log("My second alias: " + myThirdObject.alias[1])
+console.log("My third alias: " + myThirdObject.alias[2])
+console.log("My street address: " + myThirdObject["address"]["street"])
