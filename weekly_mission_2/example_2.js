@@ -85,3 +85,40 @@ class califications {
 console.log("\nMi calificacion de matematicas")
 const Mycalification = new califications(85,96,99)
 console.log(Mycalification.getCalification)
+
+// Ejemplo 7 - Setters para modificar atributos del objeto
+class psp {
+    constructor(nameDevice,company){
+        this.nameDevice = nameDevice
+        this.company = company
+        this.games = 10
+        this.batteryCondition = "Bad"
+    }
+
+    // declaramos nuestors getters
+    get getGames(){
+        return this.games
+    }
+
+    get getBatteryCondition(){
+        return this.batteryCondition
+    }
+
+    // declaramos nuestros setters
+    set setGames(games){
+        this.games = games
+    }
+
+    set setBatteryCondition(batteryCondition){
+        this.batteryCondition = batteryCondition
+    }
+}
+
+console.log("\nThe information about my PSP")
+const mypsp = new psp("PSP","SONY")
+console.log(mypsp) // PSP, SONY, 10, BAD
+
+console.log("\nThe information about my PSP update")
+mypsp.setGames = 15
+mypsp.setBatteryCondition = "Good"
+console.log(mypsp) // PSP, SONY, 15, GOOD
