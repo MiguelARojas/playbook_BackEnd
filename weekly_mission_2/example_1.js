@@ -20,3 +20,16 @@ console.log(`\nLa suma de tu arreglo es: ${sum}`)
 const countries = ['Finland', 'Denmark', 'México','Sweden','Norway']
 console.log("\nElementos en mayusculas")
 countries.forEach(element => console.log(element.toLocaleUpperCase()))
+
+
+// Ejemplo 4 - Uso del map para recorrer los elementos de una lista y crear una nueva
+const numbers3 = [1,2,3,4,5]
+const numersSquare =  numbers3.map(function(num){ return num ** 2})
+console.log("\nElementos de mi lista al cuadrado")
+console.log(numersSquare)
+
+// Ejemplo 5 - Uso del map para convertir los elementos en mayusculas
+const name = ['Miguel','Angel','Rojas','Macias']
+const nameMayus = name.map(fullName => fullName.toUpperCase())
+console.log("\nElementos de mi lista en mayusculas usando map")
+console.log(nameMayus)
