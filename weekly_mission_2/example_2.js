@@ -69,3 +69,19 @@ console.log("\nThe information about my store")
 const MyStore = new Store("Apple Store","08:00 - 22:00",5) // no es necesario mandar el dateCreated ya que solo se asigna
 console.log(MyStore.getStore())
 
+// Ejemplo 6 - Getters para acceder a la informacion de nuestro objeto
+class califications {
+    constructor(spanish,math,science){
+        this.spanish = spanish
+        this.math = math
+        this.science = science
+    }
+
+    get getCalification() {
+        return this.math // En este caso nomas retornaremos la calificacion de matematicas
+    }
+}
+
+console.log("\nMi calificacion de matematicas")
+const Mycalification = new califications(85,96,99)
+console.log(Mycalification.getCalification)
