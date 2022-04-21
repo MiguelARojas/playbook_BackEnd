@@ -77,3 +77,17 @@ const petHamster = {
 console.log("Ejemplo4. Objeto con métodos")
 console.log(petHamster.name)
 petHamster.sayHello()
+
+
+// Ejemplo 5 - Objeto con métodos con parametros
+console.log("\nEjemplo 5. Objeto con parametros en sus métodos")
+const myHamster = {
+    name: "Daxter",
+    sayHelloTo: function(yourName){
+        console.log(`${this.name} say's hello to ${yourName}`)
+    }
+}
+
+console.log("\n")
+console.log(myHamster)
+myHamster.sayHelloTo("Miguel")
