@@ -15,3 +15,8 @@ let sum = 0;
 const numbers2 = [1,2,3,4,5];
 numbers2.forEach(num => sum += num)
 console.log(`\nLa suma de tu arreglo es: ${sum}`)
+
+// Ejemplo 3 - Imprimir paises en mayusculas
+const countries = ['Finland', 'Denmark', 'México','Sweden','Norway']
+console.log("\nElementos en mayusculas")
+countries.forEach(element => console.log(element.toLocaleUpperCase()))
