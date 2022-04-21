@@ -111,3 +111,9 @@ const ages4 = [22,21,35,45,50,8,15,26]
 
 const age_45 = ages4.some(age => age == 45)
 console.log("\n¿Un elemento de nuestra lista contiene un 45? -> " + age_45) // true
+
+
+// Ejemplo 15 - Uso de sort para ordenar los elementos
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
+console.log("\nLos elementos de mi lista usando sort()")
+console.log(products.sort())
