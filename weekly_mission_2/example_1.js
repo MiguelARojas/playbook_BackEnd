@@ -117,3 +117,19 @@ console.log("\n¿Un elemento de nuestra lista contiene un 45? -> " + age_45) // 
 const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
 console.log("\nLos elementos de mi lista usando sort()")
 console.log(products.sort())
+
+// Ejemplo 16 - Uso del metodo sort en una lista de objetos
+const ages5 = [
+    {name:"Miguel", age:22},
+    {name:"Valente", age:22},
+    {name:"Angel", age:45},
+    {name:"Ana", age:33},
+    {name:"Carlos", age: 8}
+]
+
+ages5.sort((a,b) => {
+    if (a.age < b.age) return -1
+    if (a.age > b.age) return 1
+    return 0
+})
+console.log("\nNuestra lista de objetos ordenada es: " + ages5)
