@@ -96,3 +96,10 @@ const ages3 = [
 
 const age_less_than_20 = ages3.find(person => person.age < 20)
 console.log("\nPersona con menos de 20 años es: " + age_less_than_20.name + " with " + age_less_than_20.age + " years")
+
+
+// Ejemplo 13 - Uso del findIndex
+// EL findIndex nos retorna la posicion del primer elemento que cumpla con la validacion indicada
+const explorers = ['Victor','Valente','Miguel']
+const result = explorers.findIndex(name => name.length > 6) // nos retornara el primer elemento que cuente con mas de 6 caracteres
+console.log("\nPersona que cuenta con mas de 6 caracteres en su nombre es: " + explorers[result] + " que se encuentra en la posicion " + result + " de nuestro arreglo") 
