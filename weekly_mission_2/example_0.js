@@ -59,3 +59,21 @@ console.log("My name: " + myThirdObject.name)
 console.log("My second alias: " + myThirdObject.alias[1])
 console.log("My third alias: " + myThirdObject.alias[2])
 console.log("My street address: " + myThirdObject["address"]["street"])
+
+
+// Ejemplo 4 - Objeto con diferentes propiedades
+console.log("\nEjemplo 4 - Creando un Objeto con metodos\n")
+
+const petHamster = {
+    name: "Daxter",
+    age: "2 months",
+    color: "black",
+    sayHello: function () {
+        console.log(`${this.name} say you hello`)
+        console.log(`${this.name} have ${this.age} of age`)
+    }
+}
+
+console.log("Ejemplo4. Objeto con métodos")
+console.log(petHamster.name)
+petHamster.sayHello()
