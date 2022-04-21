@@ -138,3 +138,31 @@ console.log(programming.getProgrammingCodes())
     Podemos llamar al metodo directamente con el nombre de la clase
     pero si deseamos instanciar un objeto ya no podremos llamar al metodo
 */
+
+// Ejemplo 9 - Herencia entre dos clases
+class Family {
+    constructor(name,members){
+        this.name = name
+        this.members = members
+    }
+
+    get getName() {
+        return this.name
+    }
+}
+
+console.log("\nNuestra clase sin herencia")
+const newFamily = new Family('Macias',20)
+console.log(newFamily)
+console.log(newFamily.getName)
+
+// Para poder hacer hernecia entre clases es con la palabra extends
+class OtherFamily extends Family {
+    // de esta manera podemos crear una clase que pueda usar las atributos de la otra clase
+}
+
+console.log("\nNuestra clase con herencia")
+const myOtherFamily = new OtherFamily('Rojas',23)
+console.log(myOtherFamily)
+// incluso podemos hacer uso de sus metodos
+console.log(myOtherFamily.getName)
