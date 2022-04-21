@@ -76,4 +76,10 @@ console.log(numbersReduce)
 // Every nos ayuda a comprobar los elementos de nuestra lista, si todos cumplen nos retorna un true
 const namesExplorers = ['Valente','Victor','Miguel'] 
 const allNames = namesExplorers.every(name => typeof name == 'string') // comprobamos que los elementos de mi lista sean tipo string
-console.log("\Los elementos de mi lista son string (todos): " + allNames)
+console.log("\nLos elementos de mi lista son string (todos): " + allNames)
+
+// Ejemplo 11 - Uso del find
+// El find nos ayuda a buscar el primer elemento de nuestra lista que cumpla con lo que le indiquemos
+const ages2 = [22,21,35,45,50,8,15,26]
+const age = ages2.find(age => age > 25)
+console.log("\nPrimer edad encontrada mayor a 25 es " + age)
