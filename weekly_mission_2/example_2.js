@@ -122,3 +122,19 @@ console.log("\nThe information about my PSP update")
 mypsp.setGames = 15
 mypsp.setBatteryCondition = "Good"
 console.log(mypsp) // PSP, SONY, 15, GOOD
+
+
+// Ejemplo 8 - Método Static
+// EL método Static nos ayuda a escribir metodos en una clase que podemos usar sin necesidad de instanciar algo
+class programming {
+    static getProgrammingCodes(){
+        return ["C++","Python","Java","Javascript"]
+    }
+}
+
+console.log("\nLos elementos de mi clase static")
+console.log(programming.getProgrammingCodes()) 
+/*  
+    Podemos llamar al metodo directamente con el nombre de la clase
+    pero si deseamos instanciar un objeto ya no podremos llamar al metodo
+*/
