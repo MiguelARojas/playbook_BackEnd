@@ -33,3 +33,21 @@ const name = ['Miguel','Angel','Rojas','Macias']
 const nameMayus = name.map(fullName => fullName.toUpperCase())
 console.log("\nElementos de mi lista en mayusculas usando map")
 console.log(nameMayus)
+
+
+// Ejemplo 6 - Convertir un rango de mis elementos en mayusculas
+const countries2 = ['Finland', 'Denmark', 'México','Sweden','Norway']
+const countriesUpper = countries2.map(country => country.toUpperCase().slice(0, 3)) // el metodo slice obtiene la longitud de nuestro string
+console.log("\nElementos de mi lista con las primeras 3 letras en mayuscula")
+console.log(countriesUpper)
+
+// Ejemplo 7 - Uso del filter
+const namePets = ['Daxter','Taquito','Ginny','Dory','Ary','Venus']
+const namesPetsFilter = namePets.filter(pets => pets.includes('y')) // indicamos que queremos que nos filtre los nombres que tengan una y
+
+console.log("\nElementos de mi lista que incluyan una Y")
+console.log(namesPetsFilter)
+
+const namesEndsByry = namePets.filter(pets => pets.endsWith('ry'))
+console.log("\nElementos de mi lista que terminen en RY")
+console.log(namesEndsByry)
