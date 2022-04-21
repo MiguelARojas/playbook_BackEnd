@@ -65,3 +65,9 @@ const ages = [
 const agesFilter = ages.filter(agePerson => agePerson.age < 35) // asignamos que nos filtre la informacion que tenga de edad menos de 35
 console.log("\nElementos de mi lista con edad menor a 35")
 console.log(agesFilter)
+
+// Ejemplo 9 - Uso del reduce
+const numbers4 = [1,2,3,4,5]
+const numbersReduce = numbers4.reduce((acc, element) => acc + element, 0)
+console.log("\nElementos de mi lista usando reduce para hacer la suma de mi lista")
+console.log(numbersReduce)
