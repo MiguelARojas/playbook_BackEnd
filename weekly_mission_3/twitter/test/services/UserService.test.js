@@ -32,7 +32,19 @@ describe("Tests for UserService", () => {
 
         // generamos nuestras validaciones
         expect(newUser.username).toBe("NobleVictor")
+    })
 
+    test("4. Given a list of users give me the list of usernames", () => {
+        // creamos nuestros objetos
+        const user1 = UserService.create(1,"Mikael","Miguel")
+        const user2 = UserService.create(1,"Kevinpt2","Kevin")
+        const user3 = UserService.create(1,"NobleVictor","Victor")
+        // creamos nuestro objeto llamando a los usernames
+        const usernames = UserService.getAllUsernames([user1,user2,user3])
 
+        // realizamos nuestras validaciones
+        expect(usernames).toContain("Mikael")
+        expect(usernames).toContain("Kevinpt2")
+        expect(usernames).toContain("NobleVictor")
     })
 })
