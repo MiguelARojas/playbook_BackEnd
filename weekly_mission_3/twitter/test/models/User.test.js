@@ -14,4 +14,15 @@ describe('Unit Tests for User Class', () => {
         expect(newUser.dateCreated).not.toBeUndefined()
         expect(newUser.lastUpdated).not.toBeUndefined()
     });
+
+    test('2. Create methods getters', () => {
+        // creamos un objeto de nuestra clase User
+        const newUser = new User(2,"Kevinpt2","Kevin","Bio")
+
+        // pruebas de nuestros metodos get
+        expect(newUser.getUsername).toBe("Kevinpt2")
+        expect(newUser.getBio).toBe("Bio")
+        expect(newUser.getDateCreated).not.toBeUndefined()
+        expect(newUser.getLastUpdated).not.toBeUndefined()
+    })
 })
