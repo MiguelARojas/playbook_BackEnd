@@ -1,3 +1,4 @@
+// Declaramos nuestra clase User
 class User {
     constructor(id,username,name,bio,dateCreated,lastUpdated){
         this.id = id
@@ -8,3 +9,6 @@ class User {
         this.lastUpdated = lastUpdated
     }
 }
+
+// Exportamos nuestra clase User
+module.exports = User
