@@ -30,7 +30,7 @@ describe('Unit Tests for User Class', () => {
         // creamos un objeto de nuestra clase User
         const newUser = new User(3,"PilotoTaquito","Valente","Bio")
 
-        // 
+        // hacemos uso de los setters
         newUser.setUsername = "Taco"
         newUser.setBio = "New Bio"
 
