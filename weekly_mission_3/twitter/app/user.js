@@ -8,7 +8,25 @@ class User {
         this.dateCreated = new Date()
         this.lastUpdated = new Date()
     }
+
+    // métodos get
+    get getUsername(){
+        return `${this.username}`
+    }
+
+    get getBio(){
+        return `${this.bio}`
+    }
+
+    get getDateCreated(){
+        return `${this.dateCreated}`
+    }
+
+    get getLastUpdated(){
+        return `${this.lastUpdated}`
+    }
 }
+
 
 // Exportamos nuestra clase User
 module.exports = User

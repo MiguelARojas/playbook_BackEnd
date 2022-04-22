@@ -13,6 +13,5 @@ describe('Unit Tests for User Class', () => {
         expect(newUser.bio).toBe("Bio")
         expect(newUser.dateCreated).not.toBeUndefined()
         expect(newUser.lastUpdated).not.toBeUndefined()
-
     });
 })
