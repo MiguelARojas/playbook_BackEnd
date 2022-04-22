@@ -11,19 +11,19 @@ class User {
 
     // métodos get
     get getUsername(){
-        return `${this.username}`
+        return this.username
     }
 
     get getBio(){
-        return `${this.bio}`
+        return this.bio
     }
 
     get getDateCreated(){
-        return `${this.dateCreated}`
+        return this.dateCreated
     }
 
     get getLastUpdated(){
-        return `${this.lastUpdated}`
+        return this.lastUpdated
     }
 }
 
