@@ -10,6 +10,10 @@ class UserService {
     static  getInfo(User) {
         return [User.id, User.username, User.name, User.bio]
     }
+
+    static updateUsername(username){
+        this.username = username
+    }
 }
 // Exportamos nuestra clase
 module.exports = UserService
