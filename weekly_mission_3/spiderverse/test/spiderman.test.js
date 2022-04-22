@@ -9,10 +9,12 @@ describe("Test Suite Dummy Description", () => {
 
         // generamos las validaciones
         expect(TobbyMaguire.name).toBe("Spider Man")
-        expect(TobbyMaguire.age).toBe("46")
+        expect(TobbyMaguire.age).toBe(46)
         expect(TobbyMaguire.actor).toBe("Tobby Maguire")
-        expect(TobbyMaguire.movies).toBe("4")
+        expect(TobbyMaguire.movies).toBe(4)
         expect(TobbyMaguire.studio).toBe("Marvel Entertainment")
+
+        expect(TobbyMaguire.getInfo()).toBe("Hey, I'm Tobby Maguire from Marvel Entertainment")
     });
 
 })

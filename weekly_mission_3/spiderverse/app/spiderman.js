@@ -7,6 +7,10 @@ class SpiderMan{
         this.movies = movies
         this.studio = studio
     }
+
+    getInfo(name,studio) {
+        return `Hey, I'm ${this.actor} from ${this.studio}`
+    }
 }
 
 // Exportamos nuestra clase
