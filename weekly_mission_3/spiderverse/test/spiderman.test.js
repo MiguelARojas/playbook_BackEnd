@@ -1,3 +1,7 @@
+// exportamos nuestra clasem SpiderMan
+const SpiderMan = require('./../app/spiderman')
+
+
 describe("Test Suite Dummy Description", () => {
     test('1. Create an spiderman object', () => {
         // Declaramos nuestro objeto
