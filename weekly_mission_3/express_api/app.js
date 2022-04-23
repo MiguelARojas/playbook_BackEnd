@@ -33,3 +33,11 @@ app.get('/explorers/:id', (req,res) => {
     const explorer = {id: 1, name: "Miguel Rojas"}
     res.status(200).json(explorer)
 })
+
+
+// creando un endpoint que se encargue de crear un explorer
+app.post('/explorers', (req,res) => {
+    console.log(`Api Explorers POST request ${new Date()}`)
+    const requestBody = req.body // son los parametros para un cliente
+    res.status(201).json({message: "Your explorer is created"})
+})
