@@ -8,18 +8,28 @@ const port = 3000
 
 // Con esto inicializamos esta app
 app.listen(port, () => {
- console.log(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${port}`)
 })
 
 // HTTP METHODS
 app.get('/explorers', (req, res) => {
     console.log(`Api Explorers GET ALL requests ${new Date()}`)
     // creamos nuestros objetos
-    const explorer1 = {id:1, name:"Valente"}
-    const explorer2 = {id:2, name:"Miguel"}
-    const explorer3 = {id:3, name:"Victor"}
+    const explorer1 = { id: 1, name: "Valente" }
+    const explorer2 = { id: 2, name: "Miguel" }
+    const explorer3 = { id: 3, name: "Victor" }
 
     // asignamos nuestros objetos a una lista de objeto
-    const explorers = [explorer1,explorer2,explorer3]
+    const explorers = [explorer1, explorer2, explorer3]
     res.status(200).json(explorers)
+})
+
+
+// creando un endpoint con get
+app.get('/explorers/:id', (req,res) => {
+    console.log(`Api Explorers GET request ${new Date()}`)
+    console.log(`Getting explorer with id ${req.params.id}`)
+
+    const explorer = {id: 1, name: "Miguel Rojas"}
+    res.status(200).json(explorer)
 })
