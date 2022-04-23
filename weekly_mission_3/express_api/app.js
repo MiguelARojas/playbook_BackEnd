@@ -25,7 +25,7 @@ app.get('/explorers', (req, res) => {
 })
 
 
-// creando un endpoint con get
+// creando un endpoint con GET
 app.get('/explorers/:id', (req,res) => {
     console.log(`Api Explorers GET request ${new Date()}`)
     console.log(`Getting explorer with id ${req.params.id}`)
@@ -35,9 +35,18 @@ app.get('/explorers/:id', (req,res) => {
 })
 
 
-// creando un endpoint que se encargue de crear un explorer
+// creando un endpoint que se encargue de crear un explorer con POST
 app.post('/explorers', (req,res) => {
     console.log(`Api Explorers POST request ${new Date()}`)
     const requestBody = req.body // son los parametros para un cliente
     res.status(201).json({message: "Your explorer is created"})
+})
+
+
+// creando un endpoint que se encargara de actualizar un explorer con PUT
+app.put('/explorers/:id', (req,res) => {
+    console.log(`Api Explorers PUT request ${new Date()}`)
+    console.log(`Update explorer with id -> ${req.params.id}`)
+    const requestBody = req.body // son los parametros para un cliente
+    res.status(200).json({message: "Your explorer is updated"})
 })
