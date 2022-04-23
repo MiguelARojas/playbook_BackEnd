@@ -50,3 +50,11 @@ app.put('/explorers/:id', (req,res) => {
     const requestBody = req.body // son los parametros para un cliente
     res.status(200).json({message: "Your explorer is updated"})
 })
+
+// creando un endpoint que se encargara de eliminar un explorer con DELETE
+app.delete('/explorers/:id', (req,res) => {
+    console.log(`Api Explorers DELETE request ${new Date()}`)
+    console.log(`Delete explorer with id -> ${req.params.id}`)
+    const requestBody = req.body // son los parametros para un cliente
+    res.status(200).json({message: "Your explorer is deleted"})
+})
