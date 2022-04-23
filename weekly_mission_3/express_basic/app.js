@@ -12,11 +12,13 @@ app.get('/', (req, res) => {
     res.send("Hello World")
 })
 
+// creando una ruta en nuestro server
 app.get('/launchx', (req, res) => {
     res.send("Bienvenido a launchx explorer")
 })
 
-app.get('/explorersInNOde', (req, res) => {
+// creando una nueva ruta donde retorna un objeto
+app.get('/explorersInNode', (req, res) => {
     const explorer = {name: "Explorer", msg: "Bienvenido a launchx"}
     res.send(explorer)
 })
