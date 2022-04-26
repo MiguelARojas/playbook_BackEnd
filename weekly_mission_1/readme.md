@@ -1,5 +1,5 @@
 # Weekly Mission 1
-Proyectos desarrollados en la semana 1:
+Ejercicios desarrollados en la semana 1:
 
 | Ejercicio | Num.Ejercicio | Link al repo |
 | ------------- |:-------------:| -----:|
